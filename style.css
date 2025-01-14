@@ -71,6 +71,7 @@ body {
 .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
  transform: scale(1.5);
 }
+
   
 .season-header {
     text-align: center;
@@ -330,7 +331,6 @@ body {
     border: none;
 }
 
-/* 반응형 햄버거바 크기 조정 */
 .navbar-toggler {
     font-size: 18px;
     padding: 4px 8px;
@@ -371,6 +371,10 @@ body {
     .navbar-brand {
         font-size: 16px;
         letter-spacing: 1px;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     }
 
     .collection-title {
