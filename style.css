@@ -55,6 +55,23 @@ body {
     color: #000;
 }
 
+.video-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%; /* 16:9 비율 (높이 비율 설정) */
+    overflow: hidden;
+  }
+  
+  .video-full {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 비율 유지하며 화면 채우기 */
+  }
+  
 .season-header {
     text-align: center;
     padding: 40px 0 60px;
@@ -89,6 +106,7 @@ body {
 .handbag-card {
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 
 .product-item img,
@@ -105,10 +123,12 @@ body {
     transition: all 0.3s ease;
 }
 
+
 .handbag-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 .handbag-card:hover img {
     transform: scale(1.05);
@@ -401,6 +421,10 @@ body {
         letter-spacing: 0.5px;
     }
 
+    .video-full {
+        top: -20px;
+      }
+
     .collection-title {
         font-size: 10px;
     }
@@ -486,6 +510,10 @@ body {
     .navbar {
         padding: 10px 0;
     }
+
+    .video-full {
+        top: -15px;
+      }
 
     .product-grid,
     .handbag-grid {
