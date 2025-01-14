@@ -46,12 +46,60 @@
             </div>
         </div>
     </nav>
-    <!-- Banner Section -->
-    <section class="image-section">
-        <img src="https://us.louisvuitton.com/images/is/poster-video/9dcd6a83-a0f7-4b49-ac5d-7452a2b75596/kUpUCusK5194INsVX61NRbKO.jpg?wid=2400"
-            alt="Hero Image" class="full-width-image">
-    </section>
+  
+     <!-- Banner Section with Bootstrap Carousel -->
+     <section class="carousel-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/main-banner1.webp" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Discover Our New Collection</h5>
+                        <p>Explore the elegance of Louis Vuitton.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/main-banner2.webp" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Signature Style</h5>
+                        <p>Iconic designs reimagined for you.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/main-banner3.webp" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Spring-Summer 2025</h5>
+                        <p>Experience the latest trends this season.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/main-banner4.webp" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Luxury for Your Furry Friends</h5>
+                        <p>Pamper your pets with Louis Vuitton's iconic elegance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
     <!-- New This Season -->
     <section class="season-header">
