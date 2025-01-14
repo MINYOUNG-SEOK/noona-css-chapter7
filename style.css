@@ -54,23 +54,6 @@ body {
     font-size: 18px;
     color: #000;
 }
-
-.video-section {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-top: 56.25%; /* 16:9 비율 (높이 비율 설정) */
-    overflow: hidden;
-  }
-  
-  .video-full {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 비율 유지하며 화면 채우기 */
-  }
   
 .season-header {
     text-align: center;
@@ -188,9 +171,11 @@ body {
 }
 
 .full-width-image {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
+    margin: 0; /* 이미지의 상단 여백 제거 */
+    padding: 0; /* 이미지의 상단 패딩 제거 */
 }
 
 .signature-section {
@@ -421,10 +406,6 @@ body {
         letter-spacing: 0.5px;
     }
 
-    .video-full {
-        top: -20px;
-      }
-
     .collection-title {
         font-size: 10px;
     }
@@ -510,10 +491,6 @@ body {
     .navbar {
         padding: 10px 0;
     }
-
-    .video-full {
-        top: -15px;
-      }
 
     .product-grid,
     .handbag-grid {
